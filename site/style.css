@@ -2,6 +2,11 @@
     background: rgb(247, 190, 56);
 }
 
+.disabled {
+    cursor: not-allowed;
+    filter: contrast(0.3);
+}
+
 a.btn, a.button {
     display: grid;
     height: 38px;
@@ -11,7 +16,7 @@ a.btn, a.button {
     transition: opacity 0.1s;
 }
 
-a.btn:hover, a.button:hover {
+a.btn:not(.disabled):hover, a.button:not(.disabled):hover {
     opacity: 0.8;
 }
 
@@ -39,4 +44,32 @@ main {
 
 .amount {
     font-weight: bold;
+}
+
+aside {
+    max-width: 250px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    border: 1px solid #c3c4e5;
+    padding: 16px;
+    background: #d5eaf6;
+    border-radius: 8px;
+    box-shadow: 0 0 8px 3px rgba(148, 215, 255, 0.8);
+    cursor: pointer;
+    transition: box-shadow 0.5s cubic-bezier(.22,.61,.36,1);
+}
+
+aside::after {
+    content: "\D7";
+    position: absolute;
+    top: 3px;
+    right: 8px;
+    opacity: .5;
+    font-size: 13px;
+}
+
+aside.red {
+    box-shadow: 0 0 8px 3px red;
+    transition-duration: 0.15s;
 }
