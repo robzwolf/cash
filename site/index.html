@@ -18,54 +18,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <!-- Custom inline CSS -->
-    <style type="text/css">
-
-      .paypal {
-        background: rgb(247, 190, 56);
-      }
-
-      a.btn, a.button {
-        display: grid;
-        height: 38px;
-        width: 212px;
-        padding: 0;
-        place-items: center;
-        transition: opacity 0.1s;
-      }
-
-      a.btn:hover, a.button:hover {
-        opacity: 0.8;
-      }
-
-      .hidden {
-        display: none !important;
-      }
-
-      main {
-        text-align: center;
-        max-width: 350px;
-        margin: auto;
-        margin-top: 20px;
-        background: #fbfbfb;
-        border-radius: 10px;
-        border: 1px solid #eee;
-        padding: 20px;
-      }
-
-      .buttons {
-        display: grid;
-        justify-content: center;
-        grid-gap: 6px;
-        margin-top: 30px;
-      }
-
-      .amount {
-        font-weight: bold;
-      }
-
-
-    </style>
+    <!-- Custom CSS -->
+    <link href="style.css" rel="stylesheet" />
 
     <title>Pay Robbie JW</title>
   </head>
@@ -90,40 +44,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
     <!-- Actual script -->
-    <script>
-      const route = new URL(window.location.href);
-      const rawAmount = route.pathname.replace("/","");
-      const amount = parseFloat(rawAmount).toFixed(2);
-      console.log(amount, rawAmount);
-
-      const container = document.querySelector("main");
-      const subtitle = document.querySelector(".subtitle");
-      const printedAmount = document.querySelector(".subtitle .amount");
-      const applePayButton = document.querySelector(".apple-pay");
-      const paypalButton = document.querySelector(".paypal");
-      const debitCardButton = document.querySelector(".debit-card");
-      
-      if (rawAmount) {
-        printedAmount.innerHTML += amount;
-        subtitle.classList.remove("hidden");
-        
-        applePayButton.href += amount;
-        paypalButton.href += amount;
-        debitCardButton.href += amount;
-
-      }
-
-      if (window.ApplePaySession) {
-        applePayButton.classList.remove("hidden");
-      }
-
-      // Wait half a second before displaying everything to wait for the images to load
-      setTimeout(() => {
-        container.classList.remove("hidden");
-      }, 500);
-      
-
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>
 

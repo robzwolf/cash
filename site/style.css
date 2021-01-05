@@ -1,0 +1,42 @@
+.paypal {
+    background: rgb(247, 190, 56);
+}
+
+a.btn, a.button {
+    display: grid;
+    height: 38px;
+    width: 212px;
+    padding: 0;
+    place-items: center;
+    transition: opacity 0.1s;
+}
+
+a.btn:hover, a.button:hover {
+    opacity: 0.8;
+}
+
+.hidden {
+    display: none !important;
+}
+
+main {
+    text-align: center;
+    max-width: 350px;
+    margin: auto;
+    margin-top: 20px;
+    background: #fbfbfb;
+    border-radius: 10px;
+    border: 1px solid #eee;
+    padding: 20px;
+}
+
+.buttons {
+    display: grid;
+    justify-content: center;
+    grid-gap: 6px;
+    margin-top: 30px;
+}
+
+.amount {
+    font-weight: bold;
+}
