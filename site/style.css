@@ -9,7 +9,7 @@
 
 a.btn, a.button {
     display: grid;
-    height: 38px;
+    height: 45px;
     width: 212px;
     padding: 0;
     place-items: center;
@@ -29,10 +29,11 @@ main {
     max-width: 350px;
     margin: auto;
     margin-top: 20px;
-    background: #fbfbfb;
+    background: #f9fcfd;
     border-radius: 10px;
-    border: 1px solid #eee;
+    border: 1px solid #88bedf;
     padding: 20px;
+    box-shadow: 0 4px 4px 2px rgba(119, 161, 198, 0.21);
 }
 
 .buttons {
@@ -44,6 +45,7 @@ main {
 
 .amount {
     font-weight: bold;
+    color: #2461a2;
 }
 
 aside {
@@ -72,4 +74,8 @@ aside::after {
 aside.red {
     box-shadow: 0 0 8px 3px red;
     transition-duration: 0.15s;
+}
+
+.subtitle {
+    font-size: 1.2rem;
 }
