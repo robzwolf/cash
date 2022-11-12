@@ -1,0 +1,19 @@
+.buttons {
+    display: grid;
+    justify-content: center;
+    grid-gap: 6px;
+    margin-top: 30px;
+}
+
+a.btn, a.button {
+    display: grid;
+    height: 45px;
+    width: 212px;
+    padding: 0;
+    place-items: center;
+    transition: opacity 0.1s;
+}
+
+a.btn:not(.disabled):hover, a.button:not(.disabled):hover {
+    opacity: 0.8;
+}
