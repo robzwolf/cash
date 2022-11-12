@@ -5,7 +5,12 @@ const AmountPage = () => {
     const router = useRouter()
     const { amount } = router.query
 
-    return <HomePage amount={amount} />
+    let parsedAmount = parseFloat(amount)
+    if (isNaN(parsedAmount)) {
+        parsedAmount = null
+    }
+
+    return <HomePage amount={parsedAmount} />
 }
 
 export default AmountPage;

@@ -1,3 +1,8 @@
-const formatAmount = (amount) => `£${parseFloat(amount).toFixed(2)}`
+const formatAmount = (amount, prefix) => {
+    if (prefix === undefined) {
+        prefix = "£"
+    }
+    return `${prefix}${amount.toFixed(2)}`
+}
 
 export default formatAmount;

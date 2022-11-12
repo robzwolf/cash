@@ -8,7 +8,8 @@ const PayPal = ({amount, btnClassName}) => {
         <a
             href={TextWithOptionalAmount({
                 text: "https://paypal.me/rjakobwhitworth/",
-                amount
+                amount,
+                prefix: ""
             })}
             className={['btn', styles.paypal, btnClassName].join(' ')}
         >
