@@ -1,3 +1,7 @@
 .applepay {
 
 }
+
+.applepay.hidden {
+    display: none;
+}
