@@ -5,6 +5,7 @@ import styles from './homepage.module.css';
 import Head from "next/head";
 import formatAmount from "../../utils/amountformatter";
 import TextWithOptionalAmount from "../textwithoptionalamount/TextWithOptionalAmount";
+import PaymentButtons from "../paymentbuttons/PaymentButtons";
 
 const HomePage = ({amount}) => {
     return (<>
@@ -31,6 +32,7 @@ const HomePage = ({amount}) => {
                     : 'to pay Robbie'
                 }
             </Subtitle>
+            <PaymentButtons amount={amount} />
         </main>
     </>)
 }
