@@ -8,8 +8,8 @@ import applePayLogo from '../../../assets/img/apple-pay.png'
 
 function applePayWarning() {
     Swal.fire({
-        title: "You can't use Apple Pay",
-        html: "<p>You can't use Apple Pay when you view this page in an in-app browser, Facebook Messenger. <strong>Open this page in Safari to use Apple Pay.</strong></p>",
+        title: "You can't use Apple Pay with Facebook Messenger",
+        html: "<p>You can't use Apple Pay when you view this page in an in-app browser, like Facebook Messenger. <strong>Open this page in Safari to use Apple Pay.</strong></p>",
         icon: "warning",
         confirmButtonText: "I don't want to use Apple Pay",
         footer: "<p><strong>Psst:</strong> Want to use Apple Pay? Open this page in Safari.</p>"
