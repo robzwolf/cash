@@ -14,3 +14,9 @@ const AmountPage = () => {
 }
 
 export default AmountPage;
+
+// Force server-side rendering to ensure we include the right
+// social titles in the meta tags (disallow client-side rendering)
+export async function getServerSideProps() {
+    return { props: {} }
+}
