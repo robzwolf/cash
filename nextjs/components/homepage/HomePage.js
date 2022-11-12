@@ -4,18 +4,15 @@ import Amount from "../amount/Amount";
 import styles from './homepage.module.css';
 import Head from "next/head";
 import formatAmount from "../../utils/amountformatter";
+import TextWithOptionalAmount from "../textwithoptionalamount/TextWithOptionalAmount";
 
 const HomePage = ({amount}) => {
     return (<>
         <Head>
-            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-                  integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-                  crossOrigin="anonymous" />
+            <meta charSet="utf-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
             <title>
-                {amount ?
-                    `Pay Robbie ${formatAmount(amount)}`
-                    : 'Pay Robbie'
-                }
+                {TextWithOptionalAmount({text:"Pay Robbie", amount})}
             </title>
         </Head>
         <main className={styles.main}>
