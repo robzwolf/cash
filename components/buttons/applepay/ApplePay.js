@@ -22,7 +22,6 @@ const ApplePay = ({amount, buttonClassName}) => {
     useEffect(() => {
         const inapp = new InApp(navigator.userAgent || navigator.vendor || window.opera);
         if (inapp.isInApp && inapp.iOS) {
-        // if (true) {
             setHasApplePay("disabled")
             applePayWarning()
         } else if (window.ApplePaySession) {
@@ -31,6 +30,7 @@ const ApplePay = ({amount, buttonClassName}) => {
             setHasApplePay("unavailable")
         }
     })
+
     let applePayVisibleClassName;
     switch (hasApplePay) {
         case "available": {

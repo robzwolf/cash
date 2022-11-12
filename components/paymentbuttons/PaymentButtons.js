@@ -1,6 +1,6 @@
 import styles from './paymentbuttons.module.css'
-import PayPal from "../buttons/paypal/PayPal";
 import ApplePay from "../buttons/applepay/ApplePay";
+import PayPal from "../buttons/paypal/PayPal";
 import DebitCard from "../buttons/debitcard/DebitCard";
 
 const PaymentButtons = ({amount}) => {
