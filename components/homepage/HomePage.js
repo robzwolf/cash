@@ -3,9 +3,9 @@ import Subtitle from "../subtitle/Subtitle";
 import Amount from "../amount/Amount";
 import styles from './homepage.module.css';
 import Head from "next/head";
-import formatAmount from "../../utils/amountformatter";
 import TextWithOptionalAmount from "../textwithoptionalamount/TextWithOptionalAmount";
 import PaymentButtons from "../paymentbuttons/PaymentButtons";
+import ProfilePicture from "../profilepicture/ProfilePicture";
 
 const HomePage = ({amount}) => {
     return (<>
@@ -22,6 +22,7 @@ const HomePage = ({amount}) => {
             </title>
         </Head>
         <main className={styles.main}>
+            <ProfilePicture />
             <Title>Choose a payment method</Title>
             <Subtitle amount={amount}>
                 {amount ?
