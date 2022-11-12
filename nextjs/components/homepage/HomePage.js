@@ -11,6 +11,11 @@ const HomePage = ({amount}) => {
         <Head>
             <meta charSet="utf-8" />
             <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+            <meta property="og:title" content={TextWithOptionalAmount({text:"Pay Robbie", amount})} />
+            <meta property="og:description" content="Pay Robbie Jakob-Whitworth using Apple Pay, PayPal or a UK debit card."/>
+            <meta property="og:url" content="https://robbie.cash/" />
+            <meta name="twitter:card" content="summary_large_image" />
+            <meta property="og:site_name" content={TextWithOptionalAmount({text:"Pay Robbie", amount})} />
             <title>
                 {TextWithOptionalAmount({text:"Pay Robbie", amount})}
             </title>
