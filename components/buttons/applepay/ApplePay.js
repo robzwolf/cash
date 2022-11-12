@@ -23,7 +23,7 @@ const ApplePay = ({amount, buttonClassName}) => {
                 hasApplePay ? '' : styles.hidden
             ].join(' ')}
         >
-            <Image src={applePayLogo} alt={"Apple Pay"} width={212} />
+            <Image src={applePayLogo} alt={"Apple Pay"} width={212} placeholder="blur" />
         </a>
     )
 }

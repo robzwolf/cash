@@ -13,7 +13,7 @@ const PayPal = ({amount, buttonClassName}) => {
             })}
             className={['btn', styles.paypal, buttonClassName].join(' ')}
         >
-            <Image src={paypalLogo} alt="PayPal" height={30} />
+            <Image src={paypalLogo} alt="PayPal" height={30} placeholder="blur" />
         </a>
     )
 }
