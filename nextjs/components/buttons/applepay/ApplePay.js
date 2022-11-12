@@ -4,7 +4,7 @@ import Image from "next/Image";
 import applePayLogo from '../../../assets/img/apple-pay.png'
 
 const ApplePay = ({amount, buttonClassName}) => {
-    if (!window.ApplePaySession) {
+    if (typeof window !== 'undefined' && !window.ApplePaySession) {
         return null
     }
     return (

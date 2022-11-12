@@ -3,7 +3,7 @@ import TextWithOptionalAmount from "../../textwithoptionalamount/TextWithOptiona
 import Image from 'next/Image'
 import paypalLogo from '../../../assets/img/paypal-logo.png'
 
-const PayPal = ({amount, btnClassName}) => {
+const PayPal = ({amount, buttonClassName}) => {
     return (
         <a
             href={TextWithOptionalAmount({
@@ -11,7 +11,7 @@ const PayPal = ({amount, btnClassName}) => {
                 amount,
                 prefix: ""
             })}
-            className={['btn', styles.paypal, btnClassName].join(' ')}
+            className={['btn', styles.paypal, buttonClassName].join(' ')}
         >
             <Image src={paypalLogo} alt="PayPal" height={30} />
         </a>
