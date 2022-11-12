@@ -2,6 +2,11 @@
 
 }
 
-.applepay.hidden {
+.applepay.disabled {
+    cursor: not-allowed;
+    filter: contrast(0.3);
+}
+
+.applepay.unavailable {
     display: none;
 }
