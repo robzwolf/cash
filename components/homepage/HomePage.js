@@ -11,11 +11,6 @@ const HomePage = ({ amount }) => {
   return (
     <>
       <Head>
-        <meta charSet="utf-8" />
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1, shrink-to-fit=no"
-        />
         <meta
           property="og:title"
           content={TextWithOptionalAmount({ text: "Pay Robbie", amount })}
