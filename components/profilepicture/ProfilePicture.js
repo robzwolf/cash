@@ -1,5 +1,5 @@
 import styles from './profilepicture.module.css'
-import Image from "next/Image";
+import Image from "next/image";
 import profilePic from "../../assets/img/robbie.jpg";
 
 const ProfilePicture = () => (

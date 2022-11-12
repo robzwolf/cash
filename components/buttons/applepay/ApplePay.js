@@ -1,7 +1,7 @@
 import {useEffect, useState} from "react";
 import styles from './applepay.module.css'
 import TextWithOptionalAmount from "../../textwithoptionalamount/TextWithOptionalAmount";
-import Image from "next/Image";
+import Image from "next/image";
 import applePayLogo from '../../../assets/img/apple-pay.png'
 
 const ApplePay = ({amount, buttonClassName}) => {

@@ -1,6 +1,6 @@
 import styles from './paypal.module.css'
 import TextWithOptionalAmount from "../../textwithoptionalamount/TextWithOptionalAmount";
-import Image from 'next/Image'
+import Image from 'next/image'
 import paypalLogo from '../../../assets/img/paypal-logo.png'
 
 const PayPal = ({amount, buttonClassName}) => {
