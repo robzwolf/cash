@@ -1,7 +1,7 @@
 import styles from "./natwestpayit.module.css";
 import TextWithOptionalAmount from "../../textwithoptionalamount/TextWithOptionalAmount";
 
-const NatwestPayIt = ({ amount, buttonClassName }) => {
+const NatWestPayIt = ({ amount, buttonClassName }) => {
   return (
     <a
       href={TextWithOptionalAmount({
@@ -12,10 +12,11 @@ const NatwestPayIt = ({ amount, buttonClassName }) => {
       className={["btn", styles.natwestpayit, buttonClassName, "btn-primary"].join(
         " "
       )}
+      noreferrer="true"
     >
       Pay by Bank Transfer
     </a>
   );
 };
 
-export default NatwestPayIt;
+export default NatWestPayIt;
