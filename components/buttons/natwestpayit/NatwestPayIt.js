@@ -9,7 +9,7 @@ const NatwestPayIt = ({ amount, buttonClassName }) => {
         amount,
         prefix: "",
       })}
-      className={["btn", styles.debitcard, buttonClassName, "btn-primary"].join(
+      className={["btn", styles.natwestpayit, buttonClassName, "btn-primary"].join(
         " "
       )}
     >
