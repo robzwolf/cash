@@ -1,7 +1,7 @@
 import styles from "./natwestpayit.module.css";
 import TextWithOptionalAmount from "../../textwithoptionalamount/TextWithOptionalAmount";
 
-const NatwestPayIt = ({ amount, buttonClassName }) => {
+const NatWestPayIt = ({ amount, buttonClassName }) => {
   return (
     <a
       href={TextWithOptionalAmount({
@@ -18,4 +18,4 @@ const NatwestPayIt = ({ amount, buttonClassName }) => {
   );
 };
 
-export default NatwestPayIt;
+export default NatWestPayIt;
