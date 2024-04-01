@@ -1,0 +1,9 @@
+.natwestpayit {
+    background: #6d1894;
+    border: none;
+    font-weight: bold;
+}
+
+.natwestpayit:hover, .natwestpayit:active {
+    background: #6d1894!important; /* Overwrite whatever other styles are making the button go blue when it's active */
+}
