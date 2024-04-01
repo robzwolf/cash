@@ -12,6 +12,7 @@ const NatWestPayIt = ({ amount, buttonClassName }) => {
       className={["btn", styles.natwestpayit, buttonClassName, "btn-primary"].join(
         " "
       )}
+      noreferrer="true"
     >
       Pay by Bank Transfer
     </a>
