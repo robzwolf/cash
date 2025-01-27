@@ -14,7 +14,7 @@ export default function Document() {
           crossOrigin="anonymous"
         />
       </Head>
-      <body>
+      <body style={{"backgroundColor": "#152832"}}>
         <Main />
         <NextScript />
       </body>
