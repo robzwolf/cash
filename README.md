@@ -7,6 +7,7 @@ Hosted at https://robbie.cash
 ## To start project
 
 ```bash
+npm install
 npm run dev
 ```
 
