@@ -13,6 +13,8 @@ a.button {
   padding: 0;
   place-items: center;
   transition: opacity 0.1s;
+  font-family: Rubik;
+  font-weight: 500;
 }
 
 a.btn:not(.disabled):hover,
