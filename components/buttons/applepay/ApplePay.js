@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import styles from "./applepay.module.css";
-import TextWithOptionalAmount from "../../textwithoptionalamount/TextWithOptionalAmount";
 import InApp from "../../../utils/InApp";
 import Swal from "sweetalert2";
 import Image from "next/image";
@@ -65,11 +64,7 @@ const ApplePay = ({ amount, buttonClassName }) => {
   return (
     <>
       <a
-        href={TextWithOptionalAmount({
-          text: "https://settleup.starlingbank.com/robertjakobwhitworth?amount=",
-          amount,
-          prefix: "",
-        })}
+        href={`https://settleup.starlingbank.com/robertjakobwhitworth?amount=${amount || ''}`}
         className={[
           "btn",
           styles.applepay,
