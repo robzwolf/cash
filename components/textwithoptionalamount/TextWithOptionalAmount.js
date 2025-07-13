@@ -1,14 +1,11 @@
 import formatAmount from "../../utils/amountformatter";
 
-const TextWithOptionalAmount = ({ text, amount, prefix }) => {
-  if (prefix === undefined) {
-    prefix = " £";
-  }
+const TextWithOptionalAmount = ({ text, amount }) => {
   if (amount) {
-    return `${text}${prefix}${formatAmount(amount, "")}`;
+    return `Send ${formatAmount(amount, "£")} to Robbie`;
+  } else {
+    return 'Send money to Robbie'
   }
-
-  return text;
 };
 
 export default TextWithOptionalAmount;

@@ -13,19 +13,19 @@ const HomePage = ({ amount }) => {
       <Head>
         <meta
           property="og:title"
-          content={TextWithOptionalAmount({ text: "Pay Robbie", amount })}
+          content={TextWithOptionalAmount({ amount })}
         />
         <meta
           property="og:description"
-          content="Pay Robbie Jakob-Whitworth using Apple Pay, PayPal or a UK debit card."
+          content="Send money to Robbie Jakob-Whitworth using Apple Pay, PayPal or a UK debit card."
         />
         <meta property="og:url" content="https://robbie.cash/" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           property="og:site_name"
-          content={TextWithOptionalAmount({ text: "Pay Robbie", amount })}
+          content={TextWithOptionalAmount({ amount })}
         />
-        <title>{TextWithOptionalAmount({ text: "Pay Robbie", amount })}</title>
+        <title>{TextWithOptionalAmount({ amount })}</title>
       </Head>
       <main className={styles.main}>
         <ProfilePicture />
@@ -33,11 +33,10 @@ const HomePage = ({ amount }) => {
         <Subtitle amount={amount}>
           {amount ? (
             <>
-              to pay Robbie:{` `}
-              <Amount>{amount}</Amount>
+              to send <Amount>{amount}</Amount> to Robbie:
             </>
           ) : (
-            "to pay Robbie"
+            "to send money to Robbie"
           )}
         </Subtitle>
         <PaymentButtons amount={amount} />
