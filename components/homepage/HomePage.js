@@ -33,7 +33,7 @@ const HomePage = ({ amount }) => {
         <Subtitle amount={amount}>
           {amount ? (
             <>
-              to send <Amount>{amount}</Amount> to Robbie:{` `}
+              to send <Amount>{amount}</Amount> to Robbie:
             </>
           ) : (
             "to send money to Robbie"
