@@ -3,7 +3,7 @@ import styles from "./debitcard.module.css";
 const DebitCard = ({ amount, buttonClassName }) => {
   return (
     <a
-    href={`https://settleup.starlingbank.com/robertjakobwhitworth?amount=${amount || ''}`}
+    href={`https://settleup.starlingbank.com/robert-jakobwhitworth-e2fd46?amount=${amount || ''}`}
       className={["btn", styles.debitcard, buttonClassName, "btn-primary"].join(
         " "
       )}

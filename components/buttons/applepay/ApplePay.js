@@ -64,7 +64,7 @@ const ApplePay = ({ amount, buttonClassName }) => {
   return (
     <>
       <a
-        href={`https://settleup.starlingbank.com/robertjakobwhitworth?amount=${amount || ''}`}
+        href={`https://settleup.starlingbank.com/robert-jakobwhitworth-e2fd46?amount=20.00${amount || ''}`}
         className={[
           "btn",
           styles.applepay,
